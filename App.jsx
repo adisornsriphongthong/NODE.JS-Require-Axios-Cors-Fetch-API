@@ -14,6 +14,18 @@ const App = () => {
         .finally(setLoading(true));
   }*/
 
+  /*
+  fetch('http://localhost:3000/', {
+     method: 'POST,
+     header: {
+        'Content-Type': 'application/json'
+     },
+     body: JSON.stringify({Data: data})
+  })*/
+
+  //app.use(json());
+  //req.body.Data
+
   async function currentFetchData() { 
     try {
       const respone = await axios.get('http://localhost:3000/api/1');
